@@ -14,7 +14,7 @@ public class TrianglePrinterTest
     }
 
     @Test
-    public void shouldReturnSingleAsterisk() throws Exception
+    public void shouldReturnSingleAsterisk()
     {
         //given
         final String SINGLE_ASTERISK = "*";
@@ -27,7 +27,7 @@ public class TrianglePrinterTest
     }
 
     @Test
-    public void shouldReturnHorizontalLineWithSpecificNumber() throws Exception
+    public void shouldReturnHorizontalLineWithSpecificNumber()
     {
         //given
         final int LINE_NUMBER = 8;
@@ -41,7 +41,7 @@ public class TrianglePrinterTest
     }
 
     @Test
-    public void shouldReturnVerticalLineWithSpecificNumber() throws Exception
+    public void shouldReturnVerticalLineWithSpecificNumber()
     {
         //given
         final int LINE_NUMBER = 3;
