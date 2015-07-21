@@ -42,7 +42,8 @@ public class DiamondPrinter
         String message = "";
         Preconditions.checkArgument(LINE_NUMBER % 2 == 1, errorMessage);
         for (int index = 1; index <= LINE_NUMBER*2-1; index++) {
-            message += returnSpaces(Math.abs(LINE_NUMBER - index))+returnAsterisk(Math.abs(index-LINE_NUMBER-1));
+            message += returnSpaces(Math.abs(LINE_NUMBER - index)) +
+                       returnAsterisk(LINE_NUMBER*2-1-2*Math.abs(LINE_NUMBER-index));
         }
 
         return StringUtils.removeEnd(message, break_line);
