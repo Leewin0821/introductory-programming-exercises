@@ -1,4 +1,4 @@
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -36,6 +36,21 @@ public class DiamondPrinterTest
 
         //when
         String result = diamondPrinter.returnDiamond(LINE_NUMBER);
+
+        //then
+        assertEquals(result, expected);
+    }
+
+    @Test
+    public void shouldReturnDiamondWithNameAndSpecificNumber() throws Exception
+    {
+        //given
+        final int LINE_NUMBER = 3;
+        String name = "Leewin";
+        String expected = "  *"+"\n"+" ***"+"\n"+"Leewin"+"\n"+" ***"+"\n"+"  *";
+
+        //when
+        String result = diamondPrinter.returnDiamondWithName(name, LINE_NUMBER);
 
         //then
         assertEquals(result, expected);
