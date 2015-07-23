@@ -3,13 +3,12 @@ package handlers;
 public class DivisibleByFiveHandler extends DivisibleHandler
 {
     @Override
-    public void handleRequest(int number)
+    public String handleRequest(int number)
     {
         if (number % 5 == 0) {
-            //do something
-            return;
+            return "Buzz\n";
         } else {
-            //do other thing
+            return ""+number+"\n";
         }
     }
 }

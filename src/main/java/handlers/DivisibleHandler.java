@@ -12,5 +12,5 @@ public abstract class DivisibleHandler
         return handler;
     }
 
-    public abstract void handleRequest(int number);
+    public abstract String handleRequest(int number);
 }

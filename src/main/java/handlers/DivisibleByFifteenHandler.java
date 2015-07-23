@@ -3,13 +3,12 @@ package handlers;
 public class DivisibleByFifteenHandler extends DivisibleHandler
 {
     @Override
-    public void handleRequest(int number)
+    public String handleRequest(int number)
     {
         if (number % 15 == 0) {
-            //do something
-            return;
+            return "FizzBuzz\n";
         } else {
-            getHandler().handleRequest(number);
+            return getHandler().handleRequest(number);
         }
     }
 }

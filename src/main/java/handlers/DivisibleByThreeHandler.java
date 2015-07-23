@@ -3,13 +3,12 @@ package handlers;
 public class DivisibleByThreeHandler extends DivisibleHandler
 {
     @Override
-    public void handleRequest(int number)
+    public String handleRequest(int number)
     {
         if (number % 3 == 0) {
-            //do something
-            return;
+            return "Fizz\n";
         } else {
-            getHandler().handleRequest(number);
+            return getHandler().handleRequest(number);
         }
     }
 }
